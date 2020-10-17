@@ -12,7 +12,7 @@
         tools:context=".MainActivity">
 
         <Button
-            android:id="@+id/foodWater"
+            android:id="@+id/fw"
             android:layout_width="179dp"
             android:layout_height="81dp"
             android:backgroundTint="#B8A41F"
@@ -26,7 +26,7 @@
             app:layout_constraintVertical_bias="0.581" />
 
         <Button
-            android:id="@+id/zoom"
+            android:id="@+id/discord"
             android:layout_width="179dp"
             android:layout_height="81dp"
             android:backgroundTint="#B8A41F"
