@@ -1,6 +1,8 @@
 package com.example.safespots;
 
 
+import android.widget.EditText;
+
 import java.lang.StringBuilder;
 import java.util.ArrayList;
 
@@ -33,6 +35,7 @@ public class User {
         this.isSick = isSick;
         this.symptoms = symptoms;
     }
+
 
     public void setName(String name) {
         this.name = name;

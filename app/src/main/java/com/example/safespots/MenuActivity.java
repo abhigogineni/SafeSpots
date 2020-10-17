@@ -14,8 +14,7 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView titleMenu = (TextView) findViewById(R.id.Title_menu);
         TextView hello = (TextView) findViewById(R.id.hello);
+        System.out.println(MainActivity.getUser());
 
     }
-
-
 }
