@@ -30,15 +30,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:layout_editor_absoluteX="162dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="199dp" />
 
     <Button
-        android:id="@+id/Zoom - Company"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:layout_editor_absoluteX="162dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="286dp" />
 
     <Button
@@ -46,7 +47,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:layout_editor_absoluteX="161dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="400dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

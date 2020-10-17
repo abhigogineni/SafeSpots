@@ -13,4 +13,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     Button medicalProblem = new Button(findViewById(R.id.medicalProblem);
+    Button symptom = new Button(findViewById(R.id.symptom);
+
 }
