@@ -7,22 +7,8 @@
     android:orientation="vertical"
     android:id="@+id/water">
 
-    <Button
-        android:id="@+id/water"
-        android:layout_width="195dp"
-        android:layout_height="115dp"
-        android:backgroundTint="#B8A41F"
-        android:text="I would like some water..."
-        android:textColor="#FBFBFB"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
-
     <TextView
-        android:id="@+id/title_menu3"
+        android:id="@+id/foodwater"
         android:layout_width="279dp"
         android:layout_height="96dp"
         android:text="Food / Water"
@@ -49,5 +35,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.387" />
+
+    <Button
+        android:id="@+id/h20"
+        android:layout_width="195dp"
+        android:layout_height="115dp"
+        android:backgroundTint="#B8A41F"
+        android:text="I would like some water..."
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.753" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
