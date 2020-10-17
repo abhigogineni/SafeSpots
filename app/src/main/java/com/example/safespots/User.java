@@ -17,5 +17,36 @@ public class User {
         this.isSick = isSick;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setRequests(int[] requests) {
+        this.requests = requests;
+    }
+
+    public void setSick(boolean sick) {
+        isSick = sick;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public int[] getRequests() {
+        return requests;
+    }
+
+    public boolean isSick() {
+        return isSick;
+    }
 
 }
