@@ -1,5 +1,7 @@
 package com.example.safespots;
-import java.util.Arrays;
+import com.sun.org.apache.xpath.internal.operations.String;
+
+import java.lang.StringBuilder;
 
 public class User {
     private String name;
@@ -7,7 +9,7 @@ public class User {
     int[] requests = new int[4]; // 0 - medical help, 1 - food/water, 2 - Zoom/Company, 3 - Custom
     private boolean isSick;
 
-    public User (String name, int year, int medHelp, int foodWater, int zoom, int custom, boolean isSick){
+    public User (String name, int year, int medHelp, int foodWater, int zoom, int custom, boolean isSick) {
         this.name = name;
         this.year = year;
         this.requests[0] = medHelp;
@@ -45,8 +47,21 @@ public class User {
         return requests;
     }
 
+    public StringBuilder getRequestsString() {
+        StringBuilder returnString = new StringBuilder();
+        returnString.append(requests[0]);
+        for (int i = 1; i < requests.length; i++) {
+            returnString.append(", " + requests[i]);
+        }
+        return returnString;
+    }
+
     public boolean isSick() {
         return isSick;
+    }
+
+    public java.lang.String toString() {
+        return ("User: " + getName() + "\n" + "Year: " + getYear() + "\n" + "Sick: " + isSick() + "\n" + "Past Requests: " + getRequestsString() + "\n");
     }
 
 }
