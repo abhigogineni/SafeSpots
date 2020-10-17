@@ -9,7 +9,7 @@ public class User {
     private int year; //1 for freshman 4 for senior, etc
     int[] requests = new int[4]; // 0 - medical help, 1 - food/water, 2 - Zoom/Company, 3 - Custom
     private boolean isSick;
-    private ArrayList<Symptom> symptoms;
+    ArrayList<Symptom> symptoms;
     private int numZooms = 0;
 
 
