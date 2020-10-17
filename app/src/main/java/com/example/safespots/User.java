@@ -47,13 +47,13 @@ public class User {
         return requests;
     }
 
-    public StringBuilder getRequestsString() {
+    public java.lang.String getRequestsString() {
         StringBuilder returnString = new StringBuilder();
         returnString.append(requests[0]);
         for (int i = 1; i < requests.length; i++) {
             returnString.append(", " + requests[i]);
         }
-        return returnString;
+        return returnString.toString();
     }
 
     public boolean isSick() {
