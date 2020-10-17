@@ -13,23 +13,23 @@ public class User {
     private int numZooms = 0;
 
 
-    public User(String name, int year, int medHelp, int foodWater, int zoom, int custom, boolean isSick) {
+    public User(String name, int year,  boolean isSick) {
         this.name = name;
         this.year = year;
-        this.requests[0] = medHelp;
-        this.requests[1] = foodWater;
-        this.requests[2] = zoom;
-        this.requests[3] = custom;
+        this.requests[0] = 0;
+        this.requests[1] = 0;
+        this.requests[2] = 0;
+        this.requests[3] = 0;
         this.isSick = isSick;
     }
 
-    public User(String name, int year, int medHelp, int foodWater, int zoom, int custom, boolean isSick, ArrayList<Symptom> symptoms) {
+    public User(String name, int year, boolean isSick, ArrayList<Symptom> symptoms) {
         this.name = name;
         this.year = year;
-        this.requests[0] = medHelp;
-        this.requests[1] = foodWater;
-        this.requests[2] = zoom;
-        this.requests[3] = custom;
+        this.requests[0] = 0;
+        this.requests[1] = 0;
+        this.requests[2] = 0;
+        this.requests[3] = 0;
         this.isSick = isSick;
         this.symptoms = symptoms;
     }
@@ -69,8 +69,25 @@ public class User {
     public void addSymptom(Symptom symptom) {
         symptoms.add(symptom);
     }
+
     public void inZoom(){
         numZooms++;
+    }
+
+    public void addMedHelp(){
+        this.requests[0] = this.requests[0]++;
+    }
+
+    public void addFoodWater(){
+        this.requests[1] = this.requests[1]++;
+    }
+
+    public void addZoom(){
+        this.requests[2] = this.requests[2]++;
+    }
+
+    public void addCustomHelp(){
+        this.requests[3] = this.requests[3]++;
     }
 
     public java.lang.String getRequestsString() {
