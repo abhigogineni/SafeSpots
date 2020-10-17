@@ -1,15 +1,18 @@
 package com.example.safespots;
-import com.sun.org.apache.xpath.internal.operations.String;
+
 
 import java.lang.StringBuilder;
+import java.util.ArrayList;
 
 public class User {
     private String name;
     private int year; //1 for freshman 4 for senior, etc
     int[] requests = new int[4]; // 0 - medical help, 1 - food/water, 2 - Zoom/Company, 3 - Custom
     private boolean isSick;
+    private ArrayList<Symptom> symptoms;
 
-    public User (String name, int year, int medHelp, int foodWater, int zoom, int custom, boolean isSick) {
+
+    public User(String name, int year, int medHelp, int foodWater, int zoom, int custom, boolean isSick) {
         this.name = name;
         this.year = year;
         this.requests[0] = medHelp;
@@ -17,6 +20,17 @@ public class User {
         this.requests[2] = zoom;
         this.requests[3] = custom;
         this.isSick = isSick;
+    }
+
+    public User(String name, int year, int medHelp, int foodWater, int zoom, int custom, boolean isSick, ArrayList<Symptom> symptoms) {
+        this.name = name;
+        this.year = year;
+        this.requests[0] = medHelp;
+        this.requests[1] = foodWater;
+        this.requests[2] = zoom;
+        this.requests[3] = custom;
+        this.isSick = isSick;
+        this.symptoms = symptoms;
     }
 
     public void setName(String name) {
@@ -47,6 +61,14 @@ public class User {
         return requests;
     }
 
+    public boolean isSick() {
+        return isSick;
+    }
+
+    public void addSymptom(Symptom symptom) {
+        symptoms.add(symptom);
+    }
+
     public java.lang.String getRequestsString() {
         StringBuilder returnString = new StringBuilder();
         returnString.append(requests[0]);
@@ -56,12 +78,20 @@ public class User {
         return returnString.toString();
     }
 
-    public boolean isSick() {
-        return isSick;
+    public java.lang.String getSymptomsString() {
+        java.lang.StringBuilder returnString = new StringBuilder();
+        returnString.append(symptoms.get(0).toString());
+        for (int i = 1; i < symptoms.size(); i++) {
+            returnString.append(", " + symptoms.get(i).toString());
+        }
+        return returnString.toString();
     }
 
-    public java.lang.String toString() {
-        return ("User: " + getName() + "\n" + "Year: " + getYear() + "\n" + "Sick: " + isSick() + "\n" + "Past Requests: " + getRequestsString() + "\n");
+    public java.lang.String toString(){
+        return("Users: " + name +
+                "Year: " + year +
+                "Previous Requests: " + getRequestsString() +
+                "Symptoms: " + getSymptomsString());
     }
 
 }
