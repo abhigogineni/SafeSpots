@@ -10,6 +10,7 @@ public class User {
     int[] requests = new int[4]; // 0 - medical help, 1 - food/water, 2 - Zoom/Company, 3 - Custom
     private boolean isSick;
     private ArrayList<Symptom> symptoms;
+    private int numZooms = 0;
 
 
     public User(String name, int year, int medHelp, int foodWater, int zoom, int custom, boolean isSick) {
@@ -67,6 +68,9 @@ public class User {
 
     public void addSymptom(Symptom symptom) {
         symptoms.add(symptom);
+    }
+    public void inZoom(){
+        numZooms++;
     }
 
     public java.lang.String getRequestsString() {
