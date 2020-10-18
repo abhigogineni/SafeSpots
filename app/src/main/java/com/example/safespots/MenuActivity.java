@@ -21,6 +21,12 @@ public class MenuActivity extends AppCompatActivity {
         Button discord = (Button) (findViewById(R.id.discord));
         Button custom  = (Button) (findViewById(R.id.custom));
 
+
+        medical.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                setContentView(R.layout.activity_medical_help);
+            }
+        });
         medical.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

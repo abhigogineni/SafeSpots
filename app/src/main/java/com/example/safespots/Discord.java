@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 import java.util.ArrayList;
 
-public class Zoom {
+public class Discord {
     private String id;
     private String password;
     private int month;
@@ -11,7 +11,7 @@ public class Zoom {
     private int year;
     ArrayList<User> users = new ArrayList<User>();
 
-    public Zoom(String id, int month, int day, int year) {
+    public Discord(String id, int month, int day, int year) {
         this.id = id;
         this.password = "None provided";
         this.month = month;
@@ -19,7 +19,7 @@ public class Zoom {
         this.year = year;
     }
 
-    public Zoom(String id, String password, int month, int day, int year) {
+    public Discord(String id, String password, int month, int day, int year) {
         this.id = id;
         this.password = password;
         this.month = month;

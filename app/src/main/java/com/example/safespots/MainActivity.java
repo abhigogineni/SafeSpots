@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
         } catch (NumberFormatException e) {
             e.printStackTrace();
         }
-        //user = new User(user_name, user_age, true);
         isQuarantined.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 setContentView(R.layout.activity_menu);
             }
-        });
+        });//user = new User(user_name, user_age, true);
+
         Button isNotQuarantined = (Button) (findViewById(R.id.isNotQuarantined));
         TextView textViewQuarantined = (TextView) findViewById(R.id.text_is_Quarantined);
         TextView textViewTitle = (TextView) findViewById(R.id.Title_main);
