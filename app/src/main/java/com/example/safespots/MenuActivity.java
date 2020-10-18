@@ -42,7 +42,7 @@ public class MenuActivity extends AppCompatActivity {
         discord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_discord_signup);
+                setContentView(R.layout.activity_discord_info);
             }
         });
         custom.setOnClickListener(new View.OnClickListener() {
