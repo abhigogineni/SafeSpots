@@ -11,6 +11,9 @@ public class MenuActivity extends AppCompatActivity {
     Button foodWater;
     TextView titleMenu;
     TextView hello;
+    Button discord;
+    Button medicalHelp;
+    Button custom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,25 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 setContentView(R.layout.activity_foodwater);
+
+            }
+        });
+        discord.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.activity_discord_info);
+            }
+        });
+        medicalHelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.activity_medical_help);
+            }
+        });
+        custom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.activity_custom_menu);
             }
         });
     }

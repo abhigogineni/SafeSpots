@@ -16,6 +16,34 @@
             android:layout_width="179dp"
             android:layout_height="81dp"
             android:backgroundTint="#B8A41F"
+            android:text="Medical Help"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.552" />
+
+        <Button
+            android:id="@+id/medicalhelp"
+            android:layout_width="179dp"
+            android:layout_height="81dp"
+            android:backgroundTint="#B8A41F"
+            android:text="Custom"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.921" />
+
+        <Button
+            android:id="@+id/custom"
+            android:layout_width="179dp"
+            android:layout_height="81dp"
+            android:backgroundTint="#B8A41F"
             android:text="Food / Water"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -23,7 +51,22 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.581" />
+            app:layout_constraintVertical_bias="0.358" />
+
+
+        <Button
+            android:id="@+id/discord"
+            android:layout_width="179dp"
+            android:layout_height="81dp"
+            android:backgroundTint="#B8A41F"
+            android:text="Discord"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.73" />
 
         <TextView
             android:id="@+id/textView"
@@ -44,7 +87,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.583"
+            app:layout_constraintHorizontal_bias="0.719"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView"
             app:layout_constraintVertical_bias="0.05" />
@@ -70,7 +113,7 @@
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.604"
+            app:layout_constraintHorizontal_bias="0.684"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.229" />
